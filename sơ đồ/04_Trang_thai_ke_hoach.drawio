@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net" agent="HLT-07">
+  <diagram name="4. Trạng thái kế hoạch" id="22">
+    <mxGraphModel dx="2732" dy="1679" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3" parent="1" style="ellipse;fillColor=#000000;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="24" width="24" x="148" y="-80" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Nháp" vertex="1">
+          <mxGeometry height="50" width="130" x="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Chờ duyệt" vertex="1">
+          <mxGeometry height="50" width="130" x="100" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Đã duyệt" vertex="1">
+          <mxGeometry height="50" width="130" x="100" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Bị trả lại" vertex="1">
+          <mxGeometry height="50" width="130" x="-230" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Đang áp dụng" vertex="1">
+          <mxGeometry height="50" width="140" x="90" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Kết thúc" vertex="1">
+          <mxGeometry height="50" width="130" x="90" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Hủy" vertex="1">
+          <mxGeometry height="50" width="130" x="-240" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="ellipse;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="24" x="143" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="12" edge="1" parent="1" source="3" style="endArrow=block;endFill=1;html=1;rounded=0;entryX=0.473;entryY=0.027;entryDx=0;entryDy=0;entryPerimeter=0;" target="4" value="tạo kế hoạch">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="-10" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" edge="1" parent="1" source="4" style="endArrow=block;endFill=1;html=1;rounded=0;exitX=0.456;exitY=1.017;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.452;entryY=-0.002;entryDx=0;entryDy=0;entryPerimeter=0;" target="5" value="gửi duyệt (đủ nguồn, BR04)">
+          <mxGeometry relative="1" y="-5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" edge="1" parent="1" source="5" style="endArrow=block;endFill=1;html=1;rounded=0;" target="6" value="duyệt (người duyệt khác người soạn, BR02)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" edge="1" parent="1" source="5" style="endArrow=block;endFill=1;html=1;rounded=0;" target="7" value="trả lại kèm lý do">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="16" edge="1" parent="1" source="7" style="endArrow=block;endFill=1;html=1;rounded=0;" target="4" value="sửa, tạo phiên bản mới">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" edge="1" parent="1" source="6" style="endArrow=block;endFill=1;html=1;rounded=0;exitX=0.459;exitY=1.039;exitDx=0;exitDy=0;exitPerimeter=0;" target="8" value="áp dụng (không chồng lấn)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" edge="1" parent="1" source="8" style="endArrow=block;endFill=1;html=1;rounded=0;entryX=0.536;entryY=0.045;entryDx=0;entryDy=0;entryPerimeter=0;" target="9" value="hết hạn hoặc kết thúc sớm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" edge="1" parent="1" source="4" style="endArrow=block;endFill=1;html=1;rounded=0;" target="10" value="hủy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" edge="1" parent="1" source="7" style="endArrow=block;endFill=1;html=1;rounded=0;" target="10" value="hủy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" edge="1" parent="1" source="9" style="endArrow=block;endFill=1;html=1;rounded=0;" target="11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

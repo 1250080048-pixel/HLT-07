@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" agent="HLT-07">
+  <diagram name="8. Kiến trúc hệ thống" id="14">
+    <mxGraphModel dx="1234" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="&lt;b&gt;Tầng giao diện (React + Vite)&lt;/b&gt;&#xa;Màn hình đăng nhập, hồ sơ, nhật ký, soạn/duyệt kế hoạch, hàng đợi duyệt, thư viện mẫu" vertex="1">
+          <mxGeometry height="120" width="720" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="&lt;b&gt;Tầng API (ASP.NET Core 8)&lt;/b&gt;&#xa;Controller, policy phân quyền, middleware xác thực, xử lý lỗi thống nhất" vertex="1">
+          <mxGeometry height="120" width="720" x="40" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="&lt;b&gt;Tầng Domain (C# thuần)&lt;/b&gt;&#xa;Entity, trạng thái, quy tắc BR01 đến BR10, dịch vụ điều phối giao dịch" vertex="1">
+          <mxGeometry height="120" width="720" x="40" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="&lt;b&gt;Tầng hạ tầng&lt;/b&gt;&#xa;EF Core, repository, PostgreSQL, nhà cung cấp OIDC (Keycloak)" vertex="1">
+          <mxGeometry height="120" width="720" x="40" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Worker nền&#xa;(hàng đợi tự động)" vertex="1">
+          <mxGeometry height="80" width="200" x="840" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="OIDC Provider&#xa;(Keycloak)" vertex="1">
+          <mxGeometry height="70" width="200" x="880" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="9" edge="1" parent="1" source="3" style="endArrow=block;endFill=1;html=1;rounded=0;" target="4" value="HTTPS + Bearer token">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" source="4" style="endArrow=block;endFill=1;html=1;rounded=0;" target="5" value="gọi dịch vụ">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" edge="1" parent="1" source="5" style="endArrow=block;endFill=1;html=1;rounded=0;" target="6" value="repository">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" edge="1" parent="1" source="7" style="endArrow=block;endFill=1;html=1;rounded=0;" target="5" value="xử lý việc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13" edge="1" parent="1" source="8" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="4" value="xác thực token">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

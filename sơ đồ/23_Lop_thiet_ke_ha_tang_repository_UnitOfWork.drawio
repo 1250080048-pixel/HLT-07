@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="HLT-07">
+  <diagram name="23. Lớp thiết kế: hạ tầng (repository, UnitOfWork)" id="12">
+    <mxGraphModel dx="1280" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;align=left;spacingLeft=6;fontStyle=1;" value="Hạ tầng (Repository, EF Core)" vertex="1">
+          <mxGeometry height="620" width="900" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;" value="&lt;b&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&#xa;IKeHoachRepository&lt;/b&gt;&#xa;────────&#xa;+LayTheoMaAsync(maKeHoach)&#xa;+ThemAsync(kh)&#xa;+TimChongLanAsync(...)" vertex="1">
+          <mxGeometry height="100" width="300" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;" value="&lt;b&gt;KeHoachRepository&lt;/b&gt;&#xa;────────&#xa;+LayTheoMaAsync(maKeHoach)&#xa;+ThemAsync(kh)&#xa;+TimChongLanAsync(...)" vertex="1">
+          <mxGeometry height="88" width="300" x="80" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;" value="&lt;b&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&#xa;IPhieuDuyetRepository&lt;/b&gt;&#xa;────────&#xa;+ThemAsync(phieu)" vertex="1">
+          <mxGeometry height="70" width="300" x="80" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;" value="&lt;b&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&#xa;IUnitOfWork&lt;/b&gt;&#xa;────────&#xa;+BeginAsync()&#xa;+CommitAsync()" vertex="1">
+          <mxGeometry height="88" width="300" x="500" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=6;" value="&lt;b&gt;EfUnitOfWork&lt;/b&gt;&#xa;────────&#xa;+BeginAsync()&#xa;+CommitAsync()&#xa;-DbContext: TuVanDbContext" vertex="1">
+          <mxGeometry height="88" width="300" x="500" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=0;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;" value="Được gọi qua interface bởi:&#xa;- KeHoachService&#xa;- DuyetKeHoachService&#xa;- ApDungKeHoachService" vertex="1">
+          <mxGeometry height="110" width="300" x="500" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;endFill=0;dashed=1;html=1;" target="4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" edge="1" parent="1" source="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;endFill=0;dashed=1;html=1;" target="7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,151 @@
+<mxfile host="app.diagrams.net" agent="HLT-07">
+  <diagram name="17. Tuần tự UC05 Soạn kế hoạch" id="66">
+    <mxGraphModel dx="495" dy="253" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Chuyên gia soạn" vertex="1">
+          <mxGeometry height="44" width="180" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="shape=line;strokeWidth=1;dashed=1;direction=south;" value="" vertex="1">
+          <mxGeometry height="1048" width="4" x="128" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Giao diện" vertex="1">
+          <mxGeometry height="44" width="180" x="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="shape=line;strokeWidth=1;dashed=1;direction=south;" value="" vertex="1">
+          <mxGeometry height="1048" width="4" x="348" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="KeHoachController" vertex="1">
+          <mxGeometry height="44" width="180" x="480" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="shape=line;strokeWidth=1;dashed=1;direction=south;" value="" vertex="1">
+          <mxGeometry height="1048" width="4" x="568" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="KeHoachService" vertex="1">
+          <mxGeometry height="44" width="180" x="700" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="shape=line;strokeWidth=1;dashed=1;direction=south;" value="" vertex="1">
+          <mxGeometry height="1048" width="4" x="788" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="KeHoachDinhDuong" vertex="1">
+          <mxGeometry height="44" width="180" x="920" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="shape=line;strokeWidth=1;dashed=1;direction=south;" value="" vertex="1">
+          <mxGeometry height="1048" width="4" x="1008" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Cơ sở dữ liệu" vertex="1">
+          <mxGeometry height="44" width="180" x="1140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="shape=line;strokeWidth=1;dashed=1;direction=south;" value="" vertex="1">
+          <mxGeometry height="1048" width="4" x="1228" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="17" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;rounded=0;" value="1. Tạo kế hoạch nháp cho người dùng">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="131" as="sourcePoint" />
+            <mxPoint x="348" y="131" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20" edge="1" parent="1" source="6" style="endArrow=block;endFill=1;html=1;rounded=0;exitX=0.083;exitY=0.419;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.082;entryY=0.238;entryDx=0;entryDy=0;entryPerimeter=0;" target="8" value="2. POST /api/ke-hoach">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;rounded=0;" value="3. TaoNhapAsync(maNguoiSoan, maNguoiDung)">
+          <mxGeometry relative="1" x="0.0275" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="571" y="184.0000000000001" as="sourcePoint" />
+            <mxPoint x="789" y="184.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="26" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;rounded=0;" value="4. new KeHoachDinhDuong(trangThai = Nhap)">
+          <mxGeometry relative="1" x="0.0092" y="16" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="789.9999999999998" y="236" as="sourcePoint" />
+            <mxPoint x="1008" y="236" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;rounded=0;" value="5. INSERT ke_hoach_dinh_duong">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="791.9999999999998" y="280" as="sourcePoint" />
+            <mxPoint x="1230" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="32" edge="1" parent="1" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" value="6. HTTP 201 và mã kế hoạch">
+          <mxGeometry relative="1" x="-0.0096" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="572.0005940006465" y="320.9655377241603" as="sourcePoint" />
+            <mxPoint x="353.99998629451716" y="320.9947644696623" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="35" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;rounded=0;" value="7. Nhập khuyến nghị và gắn nguồn (BR04)">
+          <mxGeometry relative="1" x="0.0092" y="23" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="134.0000000000001" y="360.0000000000001" as="sourcePoint" />
+            <mxPoint x="352" y="360.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="38" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;rounded=0;" value="8. PUT /api/ke-hoach/{id}">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="351.0000000000002" y="389" as="sourcePoint" />
+            <mxPoint x="569" y="389" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="41" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;rounded=0;" value="9. CapNhatNhapAsync(maKeHoach, dto)">
+          <mxGeometry relative="1" x="0.0092" y="17" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="571.0000000000002" y="430.0000000000001" as="sourcePoint" />
+            <mxPoint x="789" y="430.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="44" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;rounded=0;" value="10. Kiểm tra trạng thái Nhap và mỗi khuyến nghị có nguồn">
+          <mxGeometry relative="1" y="-20" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="791" y="460" as="sourcePoint" />
+            <mxPoint x="1009" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="47" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;rounded=0;" value="11. UPDATE nội dung và phienBan">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="791" y="530" as="sourcePoint" />
+            <mxPoint x="1229" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="50" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;rounded=0;" value="12. Bấm gửi duyệt">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="134.0000000000001" y="560.0000000000002" as="sourcePoint" />
+            <mxPoint x="352" y="560.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;rounded=0;" value="13. POST /api/ke-hoach/{id}/gui-duyet">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="351.0000000000002" y="600" as="sourcePoint" />
+            <mxPoint x="569" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="56" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;rounded=0;" value="14. GuiDuyetAsync(maKeHoach)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="571.0000000000002" y="640" as="sourcePoint" />
+            <mxPoint x="789" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="59" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="15. GuiDuyet(): khóa nội dung (BR03)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="791" y="680" as="sourcePoint" />
+            <mxPoint x="1009" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;rounded=0;" value="16. UPDATE trang_thai = ChoDuyet">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="791" y="720" as="sourcePoint" />
+            <mxPoint x="1229" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65" edge="1" parent="1" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" value="17. HTTP 200">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="569" y="753.9999999999998" as="sourcePoint" />
+            <mxPoint x="350.99999999999955" y="753.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

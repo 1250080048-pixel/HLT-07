@@ -1,0 +1,142 @@
+<mxfile host="app.diagrams.net" agent="HLT-07">
+  <diagram name="16. Tuần tự UC04 Ghi nhật ký ăn uống" id="47">
+    <mxGraphModel dx="1689" dy="864" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Người dùng" vertex="1">
+          <mxGeometry height="44" width="180" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="shape=line;strokeWidth=1;dashed=1;direction=south;" value="" vertex="1">
+          <mxGeometry height="788" width="4" x="128" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Giao diện" vertex="1">
+          <mxGeometry height="44" width="180" x="270" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="shape=line;strokeWidth=1;dashed=1;direction=south;" value="" vertex="1">
+          <mxGeometry height="788" width="4" x="358" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="NhatKyController" vertex="1">
+          <mxGeometry height="44" width="180" x="500" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="shape=line;strokeWidth=1;dashed=1;direction=south;" value="" vertex="1">
+          <mxGeometry height="788" width="4" x="588" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="NhatKyService" vertex="1">
+          <mxGeometry height="44" width="180" x="730" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="shape=line;strokeWidth=1;dashed=1;direction=south;" value="" vertex="1">
+          <mxGeometry height="788" width="4" x="818" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="NhatKyAnUong" vertex="1">
+          <mxGeometry height="44" width="180" x="960" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="shape=line;strokeWidth=1;dashed=1;direction=south;" value="" vertex="1">
+          <mxGeometry height="788" width="4" x="1048" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Cơ sở dữ liệu" vertex="1">
+          <mxGeometry height="44" width="180" x="1190" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="shape=line;strokeWidth=1;dashed=1;direction=south;" value="" vertex="1">
+          <mxGeometry height="788" width="4" x="1278" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="128" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="358" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="17" edge="1" parent="1" source="15" style="endArrow=block;endFill=1;html=1;rounded=0;" target="16" value="1. Chọn ngày, bữa, món, khối lượng">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="358" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="588" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="20" edge="1" parent="1" source="18" style="endArrow=block;endFill=1;html=1;rounded=0;" target="19" value="2. POST /api/nhat-ky-an-uong">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="588" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="818" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="23" edge="1" parent="1" source="21" style="endArrow=block;endFill=1;html=1;rounded=0;" target="22" value="3. GhiAsync(maNguoiDung, dto)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="818" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="1278" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="26" edge="1" parent="1" source="24" style="endArrow=block;endFill=1;html=1;rounded=0;" target="25" value="4. Kiểm tra món có trong mon_an">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="1278" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="28" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="818" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="29" edge="1" parent="1" source="27" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="28" value="5. Có / không">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" style="text;html=1;align=left;fontStyle=2;" value="Nhánh thay thế: món không có trong danh mục" vertex="1">
+          <mxGeometry height="22" width="560" x="60" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="31" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="818" y="416" as="geometry" />
+        </mxCell>
+        <mxCell id="32" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="588" y="416" as="geometry" />
+        </mxCell>
+        <mxCell id="33" edge="1" parent="1" source="31" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="32" value="6. Lỗi 422 (không tự tạo món mới)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="34" parent="1" style="text;html=1;align=left;fontStyle=2;" value="Nhánh chính: món hợp lệ" vertex="1">
+          <mxGeometry height="22" width="560" x="60" y="458" as="geometry" />
+        </mxCell>
+        <mxCell id="35" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="818" y="494" as="geometry" />
+        </mxCell>
+        <mxCell id="36" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="1048" y="494" as="geometry" />
+        </mxCell>
+        <mxCell id="37" edge="1" parent="1" source="35" style="endArrow=block;endFill=1;html=1;rounded=0;" target="36" value="7. Tạo NhatKyAnUong(ngay, bua, khoiLuong)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="38" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="818" y="546" as="geometry" />
+        </mxCell>
+        <mxCell id="39" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="1278" y="546" as="geometry" />
+        </mxCell>
+        <mxCell id="40" edge="1" parent="1" source="38" style="endArrow=block;endFill=1;html=1;rounded=0;" target="39" value="8. INSERT nhat_ky_an_uong">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="41" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="588" y="598" as="geometry" />
+        </mxCell>
+        <mxCell id="42" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="358" y="598" as="geometry" />
+        </mxCell>
+        <mxCell id="43" edge="1" parent="1" source="41" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="42" value="9. HTTP 201">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="44" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="358" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="45" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="128" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="46" edge="1" parent="1" source="44" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="45" value="10. Hiển thị bữa ăn trong nhật ký ngày">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

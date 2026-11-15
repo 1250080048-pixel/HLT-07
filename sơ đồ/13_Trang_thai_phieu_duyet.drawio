@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" agent="HLT-07">
+  <diagram name="13. Trạng thái phiếu duyệt" id="14">
+    <mxGraphModel dx="1030" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3" parent="1" style="ellipse;fillColor=#000000;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="24" width="24" x="20" y="203" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="DangXem&#xa;(người duyệt mở phiếu)" vertex="1">
+          <mxGeometry height="70" width="200" x="130" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="DaDuyet&#xa;(không sửa được)" vertex="1">
+          <mxGeometry height="70" width="200" x="450" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="TraLai&#xa;(có lý do, không sửa được)" vertex="1">
+          <mxGeometry height="70" width="220" x="440" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="ellipse;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="24" x="740" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="ellipse;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="24" x="740" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="9" edge="1" parent="1" source="3" style="endArrow=block;endFill=1;html=1;rounded=0;" target="4" value="mở phiếu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" source="4" style="endArrow=block;endFill=1;html=1;rounded=0;" target="5" value="duyệt (BR02 đã kiểm tra)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" edge="1" parent="1" source="4" style="endArrow=block;endFill=1;html=1;rounded=0;" target="6" value="trả lại kèm lý do">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" edge="1" parent="1" source="5" style="endArrow=block;endFill=1;html=1;rounded=0;" target="7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13" edge="1" parent="1" source="6" style="endArrow=block;endFill=1;html=1;rounded=0;" target="8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,115 @@
+<mxfile host="app.diagrams.net" agent="HLT-07">
+  <diagram name="15. Tuần tự UC01 Đăng nhập" id="39">
+    <mxGraphModel dx="1493" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Người dùng" vertex="1">
+          <mxGeometry height="44" width="180" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="shape=line;strokeWidth=1;dashed=1;direction=south;" value="" vertex="1">
+          <mxGeometry height="684" width="4" x="128" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Giao diện React" vertex="1">
+          <mxGeometry height="44" width="180" x="270" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="shape=line;strokeWidth=1;dashed=1;direction=south;" value="" vertex="1">
+          <mxGeometry height="684" width="4" x="358" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Keycloak (OIDC)" vertex="1">
+          <mxGeometry height="44" width="180" x="500" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="shape=line;strokeWidth=1;dashed=1;direction=south;" value="" vertex="1">
+          <mxGeometry height="684" width="4" x="588" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="API" vertex="1">
+          <mxGeometry height="44" width="180" x="730" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="shape=line;strokeWidth=1;dashed=1;direction=south;" value="" vertex="1">
+          <mxGeometry height="684" width="4" x="818" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="128" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="358" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="13" edge="1" parent="1" source="11" style="endArrow=block;endFill=1;html=1;rounded=0;" target="12" value="1. Bấm Đăng nhập">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="358" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="588" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="16" edge="1" parent="1" source="14" style="endArrow=block;endFill=1;html=1;rounded=0;" target="15" value="2. Chuyển hướng /authorize kèm code_challenge (PKCE)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="588" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="128" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="19" edge="1" parent="1" source="17" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="18" value="3. Hiển thị form đăng nhập">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="128" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="588" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="22" edge="1" parent="1" source="20" style="endArrow=block;endFill=1;html=1;rounded=0;" target="21" value="4. Gửi tên đăng nhập và mật khẩu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="588" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="358" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="25" edge="1" parent="1" source="23" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="24" value="5. Redirect kèm authorization code">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="358" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="588" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="28" edge="1" parent="1" source="26" style="endArrow=block;endFill=1;html=1;rounded=0;" target="27" value="6. POST /token kèm code_verifier">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="29" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="588" y="442" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="358" y="442" as="geometry" />
+        </mxCell>
+        <mxCell id="31" edge="1" parent="1" source="29" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="30" value="7. Trả access token và id token">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="32" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="358" y="494" as="geometry" />
+        </mxCell>
+        <mxCell id="33" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="818" y="494" as="geometry" />
+        </mxCell>
+        <mxCell id="34" edge="1" parent="1" source="32" style="endArrow=block;endFill=1;html=1;rounded=0;" target="33" value="8. Gọi API kèm Bearer token">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="35" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="818" y="546" as="geometry" />
+        </mxCell>
+        <mxCell id="36" parent="1" style="ellipse;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="358" y="546" as="geometry" />
+        </mxCell>
+        <mxCell id="37" edge="1" parent="1" source="35" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="36" value="9. Trả dữ liệu theo vai trò trong claim">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

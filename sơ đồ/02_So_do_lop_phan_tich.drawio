@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net" agent="HLT-07">
+  <diagram name="2. Sơ đồ lớp phân tích" id="35">
+    <mxGraphModel dx="3185" dy="811" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;" value="NguoiDung" vertex="1">
+          <mxGeometry height="110" width="230" x="70" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="3" style="text;html=1;align=left;verticalAlign=top;" value="MaNguoiDung&#xa;SubjectOidc&#xa;HoTen&#xa;VaiTro" vertex="1">
+          <mxGeometry height="74" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;" value="KeHoachDinhDuong" vertex="1">
+          <mxGeometry height="110" width="230" x="400" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="5" style="text;html=1;align=left;verticalAlign=top;" value="MaKeHoach&#xa;PhienBan&#xa;TrangThai&#xa;TuNgay, DenNgay" vertex="1">
+          <mxGeometry height="74" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;" value="PhieuDuyet" vertex="1">
+          <mxGeometry height="110" width="230" x="780" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="7" style="text;html=1;align=left;verticalAlign=top;" value="MaPhieu&#xa;KetQua&#xa;LyDo&#xa;ThoiDiem" vertex="1">
+          <mxGeometry height="74" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;" value="NguonThamKhao" vertex="1">
+          <mxGeometry height="127" width="230" x="780" y="593" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="9" style="text;html=1;align=left;verticalAlign=top;" value="MaNguon&#xa;TenNguon&#xa;DonViCongBo&#xa;NamCongBo&#xa;DangHoatDong" vertex="1">
+          <mxGeometry height="91" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;" value="HoSoDinhDuong" vertex="1">
+          <mxGeometry height="127" width="230" x="70" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="11" style="text;html=1;align=left;verticalAlign=top;" value="MaHoSo&#xa;ChieuCao&#xa;CanNang&#xa;DiUng&#xa;ThuocNhomRuiRoCao" vertex="1">
+          <mxGeometry height="91" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;" value="KhuyenNghi" vertex="1">
+          <mxGeometry height="93" width="230" x="440" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="13" style="text;html=1;align=left;verticalAlign=top;" value="MaKhuyenNghi&#xa;NoiDung&#xa;ThuTu" vertex="1">
+          <mxGeometry height="57" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;" value="NhatKyHieuChinh" vertex="1">
+          <mxGeometry height="144" width="230" x="640" y="264.5" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="15" style="text;html=1;align=left;verticalAlign=top;" value="MaNhatKy&#xa;TenBang, MaBanGhi&#xa;HanhDong&#xa;GiaTriCu, GiaTriMoi&#xa;NguoiThucHien&#xa;ThoiDiem" vertex="1">
+          <mxGeometry height="108" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;" value="MauKeHoach" vertex="1">
+          <mxGeometry height="127" width="230" x="950" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="17" style="text;html=1;align=left;verticalAlign=top;" value="MaMau&#xa;NhomDoiTuong&#xa;MucTieu&#xa;TrangThai&#xa;PhienBan" vertex="1">
+          <mxGeometry height="91" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;" value="ChuyenGia" vertex="1">
+          <mxGeometry height="76" width="230" x="290" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="19" style="text;html=1;align=left;verticalAlign=top;" value="MaChuyenGia&#xa;VaiTro: Soan | Duyet" vertex="1">
+          <mxGeometry height="40" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;" value="NhatKyAnUong" vertex="1">
+          <mxGeometry height="110" width="230" x="-230" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="21" style="text;html=1;align=left;verticalAlign=top;" value="MaNhatKy&#xa;NgayAn&#xa;BuaAn&#xa;KhoiLuong" vertex="1">
+          <mxGeometry height="74" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;" value="MonAn" vertex="1">
+          <mxGeometry height="93" width="230" x="-230" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="23" style="text;html=1;align=left;verticalAlign=top;" value="MaMonAn&#xa;TenMon&#xa;NangLuongTrenDonVi" vertex="1">
+          <mxGeometry height="57" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="25" edge="1" parent="1" source="3" style="endArrow=none;html=1;rounded=0;fontSize=11;" target="11" value="1 — 1: có">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" edge="1" parent="1" source="3" style="endArrow=none;html=1;rounded=0;fontSize=11;" target="5" value="1 — n: nhận">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="27" edge="1" parent="1" source="3" style="endArrow=none;html=1;rounded=0;fontSize=11;" target="21" value="1 — n: ghi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28" edge="1" parent="1" source="21" style="endArrow=none;html=1;rounded=0;fontSize=11;" target="23" value="n — 1: tham chiếu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="29" edge="1" parent="1" source="19" style="endArrow=none;html=1;rounded=0;fontSize=11;" target="5" value="1 — n: soạn / duyệt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="30" edge="1" parent="1" style="endArrow=diamondThin;endFill=1;html=1;rounded=0;fontSize=11;" value="1 — n: gồm">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560.003680870353" y="170" as="sourcePoint" />
+            <mxPoint x="560" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="31" edge="1" parent="1" source="5" style="endArrow=none;html=1;rounded=0;fontSize=11;" target="7" value="1 — n: có">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="32" edge="1" parent="1" source="13" style="endArrow=none;html=1;rounded=0;fontSize=11;" target="9" value="n — n: trích từ">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="33" edge="1" parent="1" source="17" style="endArrow=open;endFill=0;html=1;rounded=0;fontSize=11;" target="5" value="1 — n: tạo bản nháp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="34" edge="1" parent="1" source="5" style="endArrow=open;endFill=0;html=1;rounded=0;fontSize=11;" target="15" value="1 — n: ghi nhận">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
